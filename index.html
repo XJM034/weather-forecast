@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <!-- 引入 TailwindCSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- 引入 Framer Motion -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/6.2.8/framer-motion.min.js"></script>
+    <!-- 引入图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-white text-gray-700 font-sans leading-normal tracking-normal">
+<div id="app" class="container mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold mb-4 text-[#FE1110]">成都市锦江区嘉祥外国语学校 Weather Forecast</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+        <!-- 单个天气卡片示例 -->
+        <div class="weather-card p-6 rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300">
+            <h2 class="text-2xl font-semibold mb-2">2025-04-09 星期三</h2>
+            <p><i class="fas fa-cloud-sun mr-2 text-[#FE1110]"></i>白天：多云, 31°C</p>
+            <p><i class="fas fa-cloud-moon mr-2 text-[#FE1110]"></i>晚上：多云, 19°C</p>
+            <p>风向：<i class="fas fa-wind mr-2 text-[#FE1110]"></i>北, 1-3级</p>
+        </div>
+        
+        <!-- 其它日期卡片类似 -->
+    </div>
+</div>
+
+<!-- 添加更多JavaScript逻辑的地方 -->
+<script>
+// JavaScript部分可以用来处理更复杂的交互或动画控制
+</script>
+</body>
+</html>
