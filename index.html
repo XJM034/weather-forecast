@@ -10,56 +10,47 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/6.2.8/framer-motion.min.js"></script>
     <!-- 引入 Font Awesome 图标库 -->
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <style>
+        .highlight {
+            color: #FE1110;
+        }
+        .highlight-bg {
+            background-color: #FE1110;
+            color: white;
+        }
+    </style>
 </head>
 <body class="bg-white text-gray-900 font-sans">
     <div id="app" class="container mx-auto p-4 min-h-screen flex flex-col items-center justify-center">
-        <h1 class="text-6xl font-bold mb-4">成都锦江区天气预报</h1>
+        <h1 class="text-6xl font-bold mb-4 highlight">成都锦江区天气预报</h1>
         <div class="flex flex-col items-center space-y-4">
-            <div class="weather-card" id="weather-card-1">
-                <h2 class="text-4xl font-semibold mb-2">2025年4月9日 (星期三)</h2>
+            <div class="weather-card bg-white shadow-md rounded-lg p-6 w-full max-w-md transition-transform duration-500 ease-in-out" id="weather-card-1">
+                <h2 class="text-4xl font-semibold mb-2 highlight">2025年4月9日 (星期三)</h2>
                 <p class="text-2xl mb-2"><i class="fas fa-cloud mr-2"></i>多云</p>
                 <p class="text-xl">温度：31°C / 19°C</p>
                 <p class="text-xl">风向：北风</p>
                 <p class="text-xl">风力：1-3级</p>
             </div>
-            <div class="weather-card" id="weather-card-2">
-                <h2 class="text-4xl font-semibold mb-2">2025年4月10日 (星期四)</h2>
+            <div class="weather-card bg-white shadow-md rounded-lg p-6 w-full max-w-md transition-transform duration-500 ease-in-out" id="weather-card-2">
+                <h2 class="text-4xl font-semibold mb-2 highlight">2025年4月10日 (星期四)</h2>
                 <p class="text-2xl mb-2"><i class="fas fa-cloud mr-2"></i>多云</p>
                 <p class="text-xl">温度：29°C / 19°C</p>
                 <p class="text-xl">风向：北风</p>
                 <p class="text-xl">风力：1-3级</p>
             </div>
-            <div class="weather-card" id="weather-card-3">
-                <h2 class="text-4xl font-semibold mb-2">2025年4月11日 (星期五)</h2>
+            <div class="weather-card bg-white shadow-md rounded-lg p-6 w-full max-w-md transition-transform duration-500 ease-in-out" id="weather-card-3">
+                <h2 class="text-4xl font-semibold mb-2 highlight">2025年4月11日 (星期五)</h2>
                 <p class="text-2xl mb-2"><i class="fas fa-cloud-rain mr-2"></i>小雨</p>
                 <p class="text-xl">温度：23°C / 12°C</p>
                 <p class="text-xl">风向：东北风</p>
                 <p class="text-xl">风力：1-3级</p>
             </div>
-            <div class="weather-card" id="weather-card-4">
-                <h2 class="text-4xl font-semibold mb-2">2025年4月12日 (星期六)</h2>
+            <div class="weather-card bg-white shadow-md rounded-lg p-6 w-full max-w-md transition-transform duration-500 ease-in-out" id="weather-card-4">
+                <h2 class="text-4xl font-semibold mb-2 highlight">2025年4月12日 (星期六)</h2>
                 <p class="text-2xl mb-2"><i class="fas fa-cloud-rain mr-2"></i>小雨</p>
                 <p class="text-xl">温度：22°C / 12°C</p>
                 <p class="text-xl">风向：北风</p>
                 <p class="text-xl">风力：1-3级</p>
             </div>
         </div>
-    </div>
-
-    <!-- 添加 Framer Motion 动画效果 -->
-    <script>
-        const { motion } = framerMotion;
-
-        document.querySelectorAll('.weather-card').forEach((card, index) => {
-            card.style.transition = 'transform 0.5s ease-in-out';
-            card.addEventListener('mouseover', () => {
-                card.style.transform = 'scale(1.05)';
-            });
-            card.addEventListener('mouseout', () => {
-                card.style.transform = 'scale(1)';
-            });
-        });
-
-        // 模仿 Apple 官网的滚动动效
-        window.addEventListener('scroll', () => {
-            const scrollPosition = window
+   
