@@ -227,13 +227,6 @@
             width: 0;
         }
 
-        footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
-
         @media (max-width: 900px) {
             .current-card {
                 grid-column: span 1;
@@ -259,16 +252,12 @@
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                 </svg>
-                <input type="text" placeholder="搜索其它城市 (暂不可用)" disabled />
+                <input type="text" placeholder="搜索其它城市" />
                 <button type="button">探索</button>
             </form>
         </header>
 
         <div class="grid" id="weather-grid"></div>
-
-        <footer>
-            数据来源：演示数据 · 最后同步：<span id="updated-at"></span>
-        </footer>
     </div>
 
     <script>
@@ -377,10 +366,6 @@
             `;
             grid.appendChild(card);
         });
-
-        const updated = document.getElementById('updated-at');
-        const now = new Date();
-        updated.textContent = now.toLocaleString('zh-CN', { hour12: false });
     </script>
 </body>
 </html>
